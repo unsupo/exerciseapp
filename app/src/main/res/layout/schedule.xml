@@ -1,0 +1,177 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/card_title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="100dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="42dp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/title_goes_here"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchMaterial"
+            android:layout_width="87dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:text="@string/switch_text"
+            android:theme="@style/SwitchTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.179" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/workouts"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/workouts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toEndOf="@+id/card_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:checkedButton="@+id/first"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            app:layout_constraintVertical_bias="0.566">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/M"
+                app:cornerRadius="100dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/m" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Tu"
+                app:cornerRadius="100dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/tu" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/W"
+                app:cornerRadius="100dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/w" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Th"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:cornerRadius="100dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/default_day"
+                android:text="@string/th" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="179dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:checkedButton="@+id/first"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/F"
+                app:cornerRadius="100dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/f" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Sa"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:cornerRadius="100dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/sa" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Su"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:cornerRadius="100dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="#9B9B9B"
+                android:text="@string/su" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subdelete"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="130dp"
+            android:elevation="1dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:backgroundTint="#FA3237"
+            app:borderWidth="0dp"
+            app:fabCustomSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

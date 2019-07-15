@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <string name="drawer_item_menu_drawer">WorkoutApp</string>
+    <string name="workout_list_name">Exercise List</string>
+    <string name="action_settings">test</string>
+    <string name="search_hint">Type Search…</string>
+
+    <!--Youtube-->
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <!--END Youtube-->
+
+    <string name="all">all</string>
+    <string name="exercises">exercise</string>
+    <string name="classifications">classifications</string>
+    <string name="muscles">muscles</string>
+    <string name="todo">TODO</string>
+    <string name="clear">clear</string>
+    <string name="no_data_available">No Workouts Scheduled; Add a workout or Create a Program</string>
+    <string name="switch_text">active</string>
+    <string name="title_goes_here">Title goes here</string>
+    <string name="su">Su</string>
+    <string name="sa">Sa</string>
+    <string name="f">F</string>
+    <string name="th">Th</string>
+    <string name="w">W</string>
+    <string name="tu">Tu</string>
+    <string name="m">M</string>
+    <string name="workouts">WORKOUTS</string>
+    <string name="frequency">frequency</string>
+    <string name="name_of_schedule">Name of Schedule</string>
+    <string name="_1st_week">1st Week</string>
+    <string name="_2nd_week">2nd Week</string>
+    <string name="_3rd_week">3rd Week</string>
+    <string name="_4th_week">4th Week</string>
+    <string name="no_sub_schedules_create_one">No Sub Schedules; Create One</string>
+    <string name="workout_programs">Workout Programs</string>
+    <string name="exercise_list">Exercise List</string>
+    <string name="my_workout">My Workout</string>
+    <string name="no_workout_programs_create_one">No Workout Programs; Create One</string>
+</resources>
